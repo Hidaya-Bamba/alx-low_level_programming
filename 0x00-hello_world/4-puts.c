@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - this is the main function
+ * main - this prints a sentence using the puts function
  *
  * Return: always 0
  */
