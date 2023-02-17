@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main Entry Point
  *
- * Description: A program to print all combinations of sinle digit numbers
+ * Description: A program to print possible combinations of numbers
  *
- * Return: Always 0 
-*/
+ * Return: Always 0
+ */
 
 int main(void)
 {
@@ -25,5 +25,6 @@ int main(void)
 		i++;
 	}
 	putchar('\n');
+
 	return (0);
 }
