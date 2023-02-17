@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main Entry Point
+ * main - Entry Point
  *
  * Description: A program to print possible combinations of numbers
  *
