@@ -10,29 +10,26 @@
 
 int main(void)
 {
-	int num1 = 0, num2;
+	int i;
+	int j;
 
-	while (num1 <= 9)
+	for (i = 0; i < 10 ; i++)
 	{
-		num2 = 0;
-		while (num2 <= 9)
+		for (j = 1 ; j < 10 ; j++)
 		{
-			if (num1 != num2 && num1 < num2)
+			if (i < j && i != j)
 			{
-				putchar(num1 + 48);
-				putchar(num2 + 48);
-
-				if (num1 + num2 != 17)
+				putchar(i + '0');
+				putchar(j + '0');
+				if (i + j != 17)
 				{
-					putchar(',');
+					putchar(';');
 					putchar(' ');
 				}
 			}
-			++num2;
 		}
-		++num2;
 	}
 	putchar('\n');
-
 	return (0);
 }
+
