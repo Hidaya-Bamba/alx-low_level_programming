@@ -1,41 +1,40 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: A program to print possible combinations of two numbers
- *
- * Return: Always 0 (Success)
-*/
+ * main - Entry Point
+ * Description: A program that prints all possible
+ * different combinations of two digits
+ * Return: Alwyas zero
+ */
 
 int main(void)
 {
-	int i;
-	int j;
+	int i = 0, j;
 
-	for (i = 0 ; i <= 99 ; i++)
+	while (i <= 99)
 	{
-		for (j = i ; j <= 99 ; j++)
+		j = i;
+		while (i <= 99)
 		{
-			int a = i / 10;
-			int b = i % 10;
-			int c = j / 10;
-			int d = j % 10;
-
-			putchar(a ? '0' + a : '0');
-			putchar('0' + b);
-			putchar(' ');
-			putchar(c ? '0' + c : '0');
-			putchar('0' + d);
-			if (i != 99 || j != 99)
+			if (i != j)
 			{
-				putchar(',');
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
 				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-
+			j++;
 		}
-
+		i++;
 	}
 	putchar('\n');
+
 	return (0);
 }
