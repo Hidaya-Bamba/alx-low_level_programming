@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - Entry Point
+ * print_alphabet - Entry point
  *
  * Description: A function to print alpahbet in lowercase
  *
