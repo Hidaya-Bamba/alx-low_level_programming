@@ -4,45 +4,23 @@
 /**
  * print_to_98 - Function to print numbers to 98
  *
- * @n: Paramter to be taken
+ * @n: Parameter to be taken
  *
- * Return: Numbers to 98
+ * Return: Printed numbers
  */
 
 void print_to_98(int n)
 {
-	int i;
-
-	if (n >= 0 && n <= 98)
+	if (n >= 98)
 	{
-		for (i = n ; i <= 98 ; i++)
-		{
-			printf("%d", i);
-			if (i != 98)
-				printf(", ");
-		}
-		printf("\n");
+		while (n > 98)
+			printf("%d, ", n--);
+		printf("%d\n", n);
 	}
-	else if (n < 0)
+	else
 	{
-		for (i = n ; i <= 98 ; i++)
-		{
-			printf("%d", i);
-			if (i != 98)
-				printf(", ");
-		}
+		while (n < 98)
+			printf("%d, ", n++);
+		printf("%d\n", n);
 	}
-	else if (n > 98)
-	{
-		for (i = n; i >= 98 ; i--)
-		{
-			printf("%d", i);
-			if (i != 98)
-				printf(", ");
-		}
-		printf("\n");
-	}
-	else if (n == 98)
-		printf("%d", n);
 }
-
